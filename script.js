@@ -21,8 +21,12 @@ console.log(correctNumber);
 window.onload = function() {
     document.getElementById("number-submit").addEventListener("click", playGame);
     document.getElementById("restart-game").addEventListener("click", initGame);
+    document.getElementById("number-submit").addEventListener("click", reset );
     showYouWon();
 
+}
+function reset(){
+    document.getElementById("number-guess").value=" ";
 }
 
 /**
